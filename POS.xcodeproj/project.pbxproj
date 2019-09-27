@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4769E0351831481D7C35B77D /* Pods_POS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B51F6909F0AB9029F3D5D1 /* Pods_POS.framework */; };
+		9D1CC885233CC709001F8016 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CC884233CC709001F8016 /* TableViewCell.swift */; };
+		9DA87602233DBAC60065E252 /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA87601233DBAC60065E252 /* TableViewCell2.swift */; };
+		9DA87605233DCEA90065E252 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA87604233DCEA90065E252 /* Customer.swift */; };
+		9DA87608233DD5B30065E252 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA87607233DD5B30065E252 /* HomeViewController.swift */; };
 		9DB07C8F233CB7AB00D2F650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB07C8E233CB7AB00D2F650 /* AppDelegate.swift */; };
 		9DB07C91233CB7AB00D2F650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB07C90233CB7AB00D2F650 /* SceneDelegate.swift */; };
 		9DB07C93233CB7AB00D2F650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB07C92233CB7AB00D2F650 /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2588734F868E1907EC3987FD /* Pods-POS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POS.release.xcconfig"; path = "Target Support Files/Pods-POS/Pods-POS.release.xcconfig"; sourceTree = "<group>"; };
+		9D1CC884233CC709001F8016 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9DA87601233DBAC60065E252 /* TableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
+		9DA87604233DCEA90065E252 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9DA87607233DD5B30065E252 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9DB07C8B233CB7AB00D2F650 /* POS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB07C8E233CB7AB00D2F650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB07C90233CB7AB00D2F650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		9DB07C97233CB7B700D2F650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB07C9A233CB7B700D2F650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DB07C9C233CB7B700D2F650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B51F6909F0AB9029F3D5D1 /* Pods_POS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A6172A540F9910C8BE4E14 /* Pods-POS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POS.debug.xcconfig"; path = "Target Support Files/Pods-POS/Pods-POS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4769E0351831481D7C35B77D /* Pods_POS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DA87603233DCDF00065E252 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DB07C92233CB7AB00D2F650 /* ViewController.swift */,
+				9DA87607233DD5B30065E252 /* HomeViewController.swift */,
+				9D1CC884233CC709001F8016 /* TableViewCell.swift */,
+				9DA87601233DBAC60065E252 /* TableViewCell2.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DA87606233DCEB00065E252 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9DA87604233DCEA90065E252 /* Customer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9DB07C82233CB7AB00D2F650 = {
 			isa = PBXGroup;
 			children = (
 				9DB07C8D233CB7AB00D2F650 /* POS */,
 				9DB07C8C233CB7AB00D2F650 /* Products */,
+				FE46110E24E919F1BE88BCAB /* Pods */,
+				D723036758521747DD81FF72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +92,31 @@
 			children = (
 				9DB07C8E233CB7AB00D2F650 /* AppDelegate.swift */,
 				9DB07C90233CB7AB00D2F650 /* SceneDelegate.swift */,
-				9DB07C92233CB7AB00D2F650 /* ViewController.swift */,
+				9DA87603233DCDF00065E252 /* Controller */,
+				9DA87606233DCEB00065E252 /* Models */,
 				9DB07C94233CB7AB00D2F650 /* Main.storyboard */,
 				9DB07C97233CB7B700D2F650 /* Assets.xcassets */,
 				9DB07C99233CB7B700D2F650 /* LaunchScreen.storyboard */,
 				9DB07C9C233CB7B700D2F650 /* Info.plist */,
 			);
 			path = POS;
+			sourceTree = "<group>";
+		};
+		D723036758521747DD81FF72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0B51F6909F0AB9029F3D5D1 /* Pods_POS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE46110E24E919F1BE88BCAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1A6172A540F9910C8BE4E14 /* Pods-POS.debug.xcconfig */,
+				2588734F868E1907EC3987FD /* Pods-POS.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DB07C9F233CB7B700D2F650 /* Build configuration list for PBXNativeTarget "POS" */;
 			buildPhases = (
+				3BF733DA57D582DAF7954F00 /* [CP] Check Pods Manifest.lock */,
 				9DB07C87233CB7AB00D2F650 /* Sources */,
 				9DB07C88233CB7AB00D2F650 /* Frameworks */,
 				9DB07C89233CB7AB00D2F650 /* Resources */,
+				D821F97A15ACC28D8D4689E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +153,7 @@
 				TargetAttributes = {
 					9DB07C8A233CB7AB00D2F650 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -133,13 +188,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BF733DA57D582DAF7954F00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-POS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D821F97A15ACC28D8D4689E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POS/Pods-POS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POS/Pods-POS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-POS/Pods-POS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9DB07C87233CB7AB00D2F650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA87602233DBAC60065E252 /* TableViewCell2.swift in Sources */,
 				9DB07C93233CB7AB00D2F650 /* ViewController.swift in Sources */,
+				9D1CC885233CC709001F8016 /* TableViewCell.swift in Sources */,
+				9DA87605233DCEA90065E252 /* Customer.swift in Sources */,
 				9DB07C8F233CB7AB00D2F650 /* AppDelegate.swift in Sources */,
+				9DA87608233DD5B30065E252 /* HomeViewController.swift in Sources */,
 				9DB07C91233CB7AB00D2F650 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +383,10 @@
 		};
 		9DB07CA0233CB7B700D2F650 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A6172A540F9910C8BE4E14 /* Pods-POS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U6H73TMDG;
 				INFOPLIST_FILE = POS/Info.plist;
@@ -293,6 +396,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = imac.POS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +404,10 @@
 		};
 		9DB07CA1233CB7B700D2F650 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2588734F868E1907EC3987FD /* Pods-POS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U6H73TMDG;
 				INFOPLIST_FILE = POS/Info.plist;
